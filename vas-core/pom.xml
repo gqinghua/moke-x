@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>com.XXXX.vas.core</artifactId>
+    <artifactId>vas-core</artifactId>
 
     <dependencies>
         <dependency>
