@@ -19,7 +19,7 @@ spring:
 mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
   #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: com.XXXX.vas.main.entity
+  typeAliasesPackage: com.moke.vas.main.entity
   #typeEnumsPackage: com.baomidou.springboot.entity.enums
   global-config:
     # 数据库相关配置
@@ -44,9 +44,9 @@ mybatis-plus:
     cache-enabled: false
 
 #webApi web package
-web-api-packages: com.XXXX.vas.main.web
+web-api-packages: com.moke.vas.main.web
 #async service package
-async-service-impl-packages: com.XXXX.vas.main.service.impl,com.XXXX.vas.main.service2.impl
+async-service-impl-packages: com.moke.vas.main.service.impl,com.moke.vas.main.service2.impl
 #http service port
 http-server-port: 8989
 #worker thread pool

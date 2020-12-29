@@ -156,7 +156,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.XXXX.vas.main.App</mainClass>
+                    <mainClass>com.moke.vas.main.App</mainClass>
                 </configuration>
             </plugin>
             <plugin>
