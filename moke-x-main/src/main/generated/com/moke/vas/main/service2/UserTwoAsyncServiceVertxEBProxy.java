@@ -16,6 +16,7 @@
 
 package com.moke.vas.main.service2;
 
+import com.moke.vas.main.service2.UserTwoAsyncService;
 import io.vertx.core.eventbus.DeliveryOptions;
 import io.vertx.core.Vertx;
 import io.vertx.core.Future;
@@ -28,12 +29,12 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.function.Function;
-
+import io.vertx.serviceproxy.ProxyHelper;
 import io.vertx.serviceproxy.ServiceException;
 import io.vertx.serviceproxy.ServiceExceptionMessageCodec;
+import com.moke.vas.main.entity.User;
 import io.vertx.core.AsyncResult;
 import io.vertx.core.Handler;
-import com.moke.vas.main.entity.User;
 
 /*
   Generated Proxy code - DO NOT EDIT

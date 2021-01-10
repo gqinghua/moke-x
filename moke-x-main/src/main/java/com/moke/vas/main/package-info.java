@@ -1,4 +1,4 @@
-@ModuleGen(name = "integrator-vas", groupPackage = "com.XXXX.vas.main")
+@ModuleGen(name = "integrator-vas", groupPackage = "com.moke.vas.main")
 
 package com.moke.vas.main;
 

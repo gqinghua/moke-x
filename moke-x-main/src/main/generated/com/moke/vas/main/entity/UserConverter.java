@@ -17,6 +17,7 @@
 package com.moke.vas.main.entity;
 
 import io.vertx.core.json.JsonObject;
+import io.vertx.core.json.JsonArray;
 
 /**
  * Converter for {@link com.moke.vas.main.entity.User}.
