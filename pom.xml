@@ -9,8 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>vas-core</module>
-        <module>vas-main</module>
+        <module>moke-x-core</module>
+        <module>moke-x-main</module>
     </modules>
 
     <dependencyManagement>

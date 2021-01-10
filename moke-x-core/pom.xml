@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>vas-core</artifactId>
+    <artifactId>moke-x-core</artifactId>
 
     <dependencies>
         <dependency>
