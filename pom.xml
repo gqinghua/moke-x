@@ -12,13 +12,20 @@
         <module>moke-x-core</module>
         <module>moke-x-main</module>
     </modules>
-
+    <properties>
+        <stack.version>4.0.2</stack.version>
+        <pac4j.version>1.6.0</pac4j.version>
+        <doc.skip>true</doc.skip>
+        <junit-jupiter.version>5.7.0</junit-jupiter.version>
+        <spring.boot.version>2.3.9.RELEASE</spring.boot.version>
+        <jar.manifest>${project.basedir}/src/main/resources/META-INF/MANIFEST.MF</jar.manifest>
+    </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>io.vertx</groupId>
                 <artifactId>vertx-dependencies</artifactId>
-                <version>3.5.3</version>
+                <version>${stack.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -26,11 +33,21 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.0.3.RELEASE</version>
+                <version>${spring.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-junit5</artifactId>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit-jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
             <dependency>
                 <groupId>org.reflections</groupId>
                 <artifactId>reflections</artifactId>
@@ -72,6 +89,12 @@
                 <groupId>io.github.jklingsporn</groupId>
                 <artifactId>vertx-jooq-classic-jdbc</artifactId>
                 <version>6.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-service-proxy</artifactId>
+                <classifier>processor</classifier>
+                <version>3.9.5</version>
             </dependency>
         </dependencies>
 
